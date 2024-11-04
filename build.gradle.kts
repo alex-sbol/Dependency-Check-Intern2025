@@ -10,6 +10,11 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib"))
     implementation("io.github.classgraph:classgraph:4.8.158")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
 
 java {
